@@ -1,0 +1,94 @@
+/* body
+ */
+body{
+    color: white;
+    text-shadow: black 1px 2px 1px 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 5s;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    width: 880px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.form-container{
+    width: 100%;
+}
+
+.form-unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.page-description, .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 3em;
+}
+
+.personal-info .form-unit{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.personal-info .form-unit input{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: 2em;
+}
+
+.option-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#textarea{
+    width: 100%;
+    height: 5em;
+}
+
+.submit-button{
+    width: 100%;
+}
+.submit-button input{
+    width: 100%;
+    height: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: green;
+}

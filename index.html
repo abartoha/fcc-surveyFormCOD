@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form - Call Of Duty</title>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <!-- container -->
+    <div class="container">
+      <!-- title -->
+      <div class="title">
+        <h1 id="title">Call of Duty Fan Club Survey Form</h1>
+      </div>
+      <!-- page desc -->
+      <div class="page-description">
+        <p id=description>
+          Before we induct you into our secret club, we must know your preferences.
+        </p>
+      </div>
+      <!-- form container -->
+      <div class="form-container">
+        <form action="" id="survey-form">
+          <div class="personal-info">
+            <!-- name -->
+            <div class="form-unit">
+              <label id="name-label" for="">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <!-- email -->
+            <div class="form-unit">
+              <label id="email-label" for="">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <!-- number -->
+            <div class="form-unit">
+              <label id="number-label" for="">Age</label>
+              <input type="number" id="number" name="number" required min=0 max=99 placeholder="Enter your age (0-99)">
+            </div>
+          </div>
+          <hr>
+          <div class="dataset-fields">
+            <!-- radio1 done -->
+            <div class="form-unit">
+              <p>What's your favourite WW2 Call Of Duty PC Release?</p>
+              <label>
+                <input name="ww2" value="1" type="radio" class="input-radio"  />Call
+                Of Duty</label>
+              <label>
+                <input name="ww2" value="2" type="radio" class="input-radio" />Call Of Duty
+                2</label>
+
+              <label><input name="ww2" value="waw" type="radio" class="input-radio" />Call Of
+                Duty World At War</label>
+              <label><input name="ww2" value="ww2" type="radio" class="input-radio" />Call Of
+                Duty WW2</label>
+            </div>
+            <hr>
+            <div class="form-unit">
+              <p>What's your favourite "Modern" Call Of Duty PC Release?</p>
+              <label>
+                <input name="modern" value="4mw" type="radio" class="input-radio"  />Call
+                Of Duty 4: Modern Warfare</label>
+              <label>
+                <input name="modern" value="mw2" type="radio" class="input-radio" />Call Of Duty
+                Moder Warfare 2</label>
+
+              <label><input name="modern" value="mw3" type="radio" class="input-radio" />Call Of
+                Duty Moder Warfare 3</label>
+              <label><input name="modern" value="bop" type="radio" class="input-radio" />Call Of
+                Duty Black Ops</label>
+              <label><input name="modern" value="bo2" type="radio" class="input-radio" />Call Of
+                Duty Black Ops 2</label>
+              <label><input name="modern" value="boc" type="radio" class="input-radio" />Call Of
+                Duty Black Ops Cold War</label>
+            </div>
+            <hr>
+            <div class="form-unit">
+              <p>What's your favourite Post-Modern Call Of Duty PC Release?</p>
+              <label>
+                <input name="post-modern" value="infn" type="radio" class="input-radio"  />Call
+                Of Duty Infinity Warfare</label>
+              <label>
+                <input name="post-modern" value="advn" type="radio" class="input-radio" />Call Of Duty
+                Advanced Warfare</label>
+
+              <label><input name="post-modern" value="bop3" type="radio" class="input-radio" />Call Of
+                Duty Black Ops 3</label>
+                <label><input name="post-modern" value="oops" type="radio" class="input-radio" />They all suck!</label>
+
+            </div>
+            <hr>
+            <!-- drpdown1 -->
+            <div class="form-unit">
+              <p>
+                Which iconic Call of Duty stealth mission you love most?
+              </p>
+              <select id="dropdown" name="mostLike" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="Contingency (MW2)">Contingency (MW2)</option>
+                <option value="Cliffhanger (MW2)">Cliffhanger (MW2)</option>
+                <option value="Resistance Movement (MW3)">Resistance Movement (MW3)</option>
+                <option value="All Ghilled Up (4MW)">All Ghilled Up (4MW)</option>
+                <option value="Viet Cong (BOps)">Viet Cong (BOps)</option>
+              </select>
+            </div>
+            <hr>
+            <!-- checkbox -->
+            <div class="form-unit">
+              <p>
+                Which games did you like in Call Of Duty Franchise?
+                <span class="clue">(Check all that apply)</span>
+              </p>
+
+              <label><input name="goodGames" value="1" type="checkbox" class="input-checkbox" />Call Of
+                Duty</label>
+              <label>
+                <input name="goodGames" value="2" type="checkbox" class="input-checkbox" />Call Of Duty
+                2</label>
+              <label><input name="goodGames" value="4mw" type="checkbox" class="input-checkbox" />Call Of
+                Duty 4: Modern Warfare</label>
+              <label><input name="goodGames" value="mw2" type="checkbox" class="input-checkbox" />Call Of Duty:
+                Modern Warfare 2</label>
+              <label><input name="goodGames" value="waw" type="checkbox" class="input-checkbox" />Call Of
+                Duty World At War</label>
+              <label><input name="goodGames" value="bop" type="checkbox" class="input-checkbox" />Call Of
+                Duty Black Ops</label>
+              <label><input name="goodGames" value="mw3" type="checkbox" class="input-checkbox" />Call Of Duty Modern
+                Warfare 3</label>
+              <label><input name="goodGames" value="bo2" type="checkbox" class="input-checkbox" />Call Of Duty
+                Black Ops 2</label>
+              <label><input name="goodGames" value="adv" type="checkbox" class="input-checkbox" />Call Of Duty Advanced
+                Warfare</label>
+              <label><input name="goodGames" value="inf" type="checkbox" class="input-checkbox" />Call Of Duty Infinity
+                Warfare</label>
+              <label><input name="goodGames" value="ww2" type="checkbox" class="input-checkbox" />Call Of
+                Cuty WW2</label>
+              <label><input name="goodGames" value="bo3" type="checkbox" class="input-checkbox" />Call Of
+                Duty Black Ops 3</label>
+              <label><input name="goodGames" value="mwr" type="checkbox" class="input-checkbox" />Call Of
+                Duty: Modern Warfare Remastered</label>
+              <label><input name="goodGames" value="bcw" type="checkbox" class="input-checkbox" />Call Of
+                Duty Black Ops Cold War</label>
+              <label><input name="goodGames" value="Other" type="checkbox"
+                  class="input-checkbox" />Other</label>
+            </div>
+          </div>
+          <hr>
+
+          <div class="form-unit">
+            <p>
+              Which weapons or techniques you excel better than average?
+            </p>
+            <label><input name="prof" value="ar" type="checkbox" class="input-checkbox" />
+              Assault Rifles/Machine Guns/Fire and Manuever
+            </label>
+            <label><input name="prof" value="mp" type="checkbox" class="input-checkbox" />
+              Machine Pistols/SMGs/Breaching
+            </label>
+            <label><input name="prof" value="se" type="checkbox" class="input-checkbox" />
+              Stealth/Evasion/Cover and Move
+            </label>
+            <label><input name="prof" value="sh" type="checkbox" class="input-checkbox" />
+              Melee/CQB/Shotgun
+            </label>
+            <label><input name="prof" value="sn" type="checkbox" class="input-checkbox" />
+              Sniping/Pistols/Support
+            </label>
+            <label><input name="prof" value="ex" type="checkbox" class="input-checkbox" />
+              Explosives/Grenades/Launchers
+            </label>
+          </div>
+          <hr>
+
+          <div class="form-unit">
+            <p>Do you love the zombie modes?</p>
+            <label>
+              <input name="zom" value="yay" type="radio" class="input-radio"  />Yes, all of them</label>
+            <label>
+              <input name="zom" value="yeh" type="radio" class="input-radio" />Yes, but only in some releases</label>
+            <label>
+              <input name="zom" value="nay" type="radio" class="input-radio" />No</label>
+            <label>
+              <input name="zom" value="neh" type="radio" class="input-radio" />Never played</label>
+          </div>
+          <hr>
+
+          <div class="form-unit">
+            <p>Do you like multiplayer mode?</p>
+            <label>
+              <input name="mul" value="yay" type="radio" class="input-radio"  />Yes, all of them</label>
+            <label>
+              <input name="mul" value="yeh" type="radio" class="input-radio" />Yes, but only in some releases</label>
+            <label>
+              <input name="mul" value="nay" type="radio" class="input-radio" />No</label>
+            <label>
+              <input name="mul" value="neh" type="radio" class="input-radio" />Never played</label>
+          </div>
+          <hr>
+
+          <div class="form-unit">
+            <p>Do you love the zombie modes?</p>
+            <label>
+              <input name="zom" value="yay" type="radio" class="input-radio"  />Yes, all of them</label>
+            <label>
+              <input name="zom" value="yeh" type="radio" class="input-radio" />Yes, but only in some releases</label>
+            <label>
+              <input name="zom" value="nay" type="radio" class="input-radio" />No</label>
+            <label>
+              <input name="zom" value="neh" type="radio" class="input-radio" />Never played</label>
+          </div>
+          <hr>
+
+          <div class="form-unit">
+            <p>
+              Which platforms have you played Call of Duty games through?
+            </p>
+            <label><input name="pla" value="xbx" type="checkbox" class="input-checkbox" />
+              X-box
+            </label>
+            <label><input name="pla" value="psx" type="checkbox" class="input-checkbox" />
+              PSx
+            </label>
+            <label><input name="pla" value="win" type="checkbox" class="input-checkbox" />
+              Windows
+            </label>
+            <label><input name="pla" value="app" type="checkbox" class="input-checkbox" />
+              iOS
+            </label>
+            <label><input name="pla" value="and" type="checkbox" class="input-checkbox" />
+              Android
+            </label>
+            <label><input name="pla" value="mac" type="checkbox" class="input-checkbox" />
+              Mac
+            </label>
+            <label><input name="pla" value="lin" type="checkbox" class="input-checkbox" />
+              Linux(?)
+            </label>
+          </div>
+          <hr>
+
+          <!-- <select name="bestStory" id="" class="dropdown">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <hr> -->
+
+          <!-- <div class="form-unit">
+            <p>Do you love the zombie modes?</p>
+            <label>
+              <input name="" value="" type="radio" class="input-radio"  /></label>
+            <label>
+              <input name="" value="" type="radio" class="input-radio" /></label>
+            <label>
+              <input name="" value="" type="radio" class="input-radio" /></label>
+            <label>
+              <input name="" value="" type="radio" class="input-radio" /></label>
+          </div>
+          <hr> -->
+
+          <!-- <div class="form-unit">
+            <p>
+
+            </p>
+            <label><input name="" value="" type="checkbox" class="input-checkbox" />
+
+            </label>
+            <label><input name="" value="" type="checkbox" class="input-checkbox" />
+
+            </label>
+            <label><input name="" value="" type="checkbox" class="input-checkbox" />
+
+            </label>
+          </div>
+          <hr> -->
+
+          <p>Do you have any opinion that might be different from above?</p>
+          <textarea name="comment" id="textarea" cols="30" rows="10"
+            placeholder="Enter Your Comment (Optional)"></textarea>
+          <hr>
+          <div class="submit-button">
+            <input type="submit" value="Submit" id="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+  const timer = ms => new Promise(res => setTimeout(res, ms))
+  let numOfImages = 6;
+  let targetDiv = document.querySelector('body');
+  async function load() {
+    while (true) {
+      for (var i = 1; i <= numOfImages; i++) {
+        let imgURL = `img${i}.jpg`;
+        targetDiv.style.backgroundImage = `url(${imgURL})`;
+        await timer(20000);
+      }
+    }
+  }
+  load();
+</script>
+
+</html>
